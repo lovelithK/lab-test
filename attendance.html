@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance | Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="attendance.html" class="active">Attendance</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>My Attendance</h2>
+
+    <section class="summary">
+      <div class="card">
+        <p>Total Classes</p>
+        <h3 id="total-classes">0</h3>
+      </div>
+      <div class="card">
+        <p>Attended Classes</p>
+        <h3 id="attended-classes">0</h3>
+      </div>
+      <div class="card">
+        <p>Attendance Percentage</p>
+        <h3 id="attendance-percentage">0%</h3>
+      </div>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Total Classes</th>
+          <th>Attended</th>
+          <th>Percentage</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="attendance-body"></tbody>
+    </table>
+
+    <p class="note">Minimum required attendance is 75%.</p>
+  </main>
+
+  <script src="attendance.js"></script>
+</body>
+</html>
